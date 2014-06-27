@@ -36,7 +36,26 @@ $response = $XeroOAuth->request('GET', $XeroOAuth->url('Organisation', 'core'), 
                                 if($phonedetail->PhoneNumber!=0){
                                     echo $phonedetail->PhoneType. " Number : [" .$phonedetail->PhoneCountryCode. "] - ".$phonedetail->PhoneNumber."<br>";
                                     }
-                               }
+                            }
+                            
+                        foreach ( $organisation->Organisations[0]->Organisation->Addresses->Address as $addressdetails )
+                            {
+                                echo "<br>";
+                                echo $addressdetails->AddressType." Address<br>";
+                                echo $addressdetails->AddressLine1."<br>";
+                                echo $addressdetails->AddressLine2."<br>";
+                                echo $addressdetails->City."<br>";   
+                                echo $addressdetails->Region."<br>"; 
+                                echo $addressdetails->PostalCode."<br>"; 
+                                echo $addressdetails->Country."<br>"; 
+                            }
+                        
+                        foreach ( $organisation->Organisations[0]->Organisation->ExternalLinks->ExternalLink as $extlinkdetails )
+                            {
+                                echo "<br>";
+                                echo $extlinkdetails->LinkType." : ".$extlinkdetails->Url."<br>";
+                                 
+                            }
                         } else {
                         outputError($XeroOAuth);
                     }
