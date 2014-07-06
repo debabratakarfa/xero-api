@@ -26,7 +26,7 @@ $useragent = "dkarfawork";
  * Go to https://api.xero.com/Application/List and select your application
  * Under OAuth callback domain enter localhost or whatever domain you are using.
  */
-define ( "OAUTH_CALLBACK", 'http://www.dkarfawork.com/work/xero-api/index.php' );
+define ( "OAUTH_CALLBACK", 'http://xeroapi.onmystaging.com/xerov1/index.php' );
 
 /**
  * Application specific settings
@@ -40,8 +40,8 @@ define ( "OAUTH_CALLBACK", 'http://www.dkarfawork.com/work/xero-api/index.php' )
 include 'tests/testRunner.php';
 
 $signatures = array (
-		'consumer_key' => 'CZBBNFE8Z2SQST05YNOAOXMXDXBPUK',
-		'shared_secret' => 'XLKTCO6ZNKV96NSJHPEHMNNKAR5AMZ',
+		'consumer_key' => 'NSHWW6LIVFZEVIYEMMLNDU0SCZVXRL',
+		'shared_secret' => 'FRGBEUERHTOIEH2SDSBJGME0RDVEJC',
 		// API versions
 		'core_version' => '2.0',
 		'payroll_version' => '1.0' 

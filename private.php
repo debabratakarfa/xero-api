@@ -6,9 +6,10 @@ define ( "XRO_APP_TYPE", "Private" );
 define ( "OAUTH_CALLBACK", "oob" );
 $useragent = "XeroOAuth-PHP Private App Test";
 
+
 $signatures = array (
-		'consumer_key' => 'XZBOLSJLXNTALIELGI9J1J1BDQ4ZTP',
-		'shared_secret' => 'GXYYULJCJDLSWC33JXH7SXICNZE2DA',
+		'consumer_key' => '73HXW24F1OWX13N8NTNH5GDMS7RL2X',
+		'shared_secret' => 'KA6IMI6GCIZ8TNAHV4C1OMID4IATS9',
 		// API versions
 		'core_version' => '2.0',
 		'payroll_version' => '1.0' 
